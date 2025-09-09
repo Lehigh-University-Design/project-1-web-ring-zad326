@@ -1,126 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ride the West — Jackson Hole • Vail • Big Sky</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="scripts.js" ></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowboarding | Zach DeSieno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
+
 <body>
-  <div class="snow" aria-hidden="true"></div>
-  <header class="hero">
-    <h1 class="title">Ride the West</h1>
-    <p class="subtitle">A quick look at three legendary mountains — <strong>Jackson Hole</strong> (WY), <strong>Vail</strong> (CO), and <strong>Big Sky</strong> (MT). Vibe, terrain, and what makes each unique.</p>
-
-    <nav class="nav" aria-label="Mountain tabs">
-      <button class="tab-btn active" data-target="#jackson">Jackson Hole</button>
-      <button class="tab-btn" data-target="#vail">Vail</button>
-      <button class="tab-btn" data-target="#bigsky">Big Sky</button>
-    </nav>
-  </header>
-
-  <main class="container">
-    <!-- JACKSON HOLE -->
-    <section id="jackson" class="panel active" aria-label="Jackson Hole">
-      <article class="card">
-        <div class="media">
-          <span class="label">Jackson Hole, Wyoming</span>
-          <img src="images/jackson-hero.jpg" alt="Jackson Hole tram with rugged Tetons in the background" />
+    <div class="landing">
+        <div id="landing-img-container">
+            <img src="assets/AdobeStock_296465781.jpeg" alt="Snowboarder on steep mountain">
         </div>
-        <div class="content">
-          <h3>Remote. Natural. Ungroomed energy.</h3>
-          <p>Jackson rides like the backcountry even when you’re on the map. It’s <em>steep</em>, narrow in spots, and rewards strong board control. The vibe leans core—tram laps, no-frills, and a locals-first feel. Trees, chutes, and fall-line steeps dominate.</p>
-          <div class="chips">
-            <span class="chip">Steeps + Chutes</span>
-            <span class="chip">Tree runs</span>
-            <span class="chip">Tram laps</span>
-            <span class="chip">Wind-buffed pow</span>
-          </div>
-          <div class="gallery" aria-label="Jackson gallery">
-            <img src="images/jackson-1.jpg" alt="Snowboarder dropping a steep chute at Jackson" />
-            <img src="images/jackson-2.jpg" alt="Teton skyline at golden hour" />
-            <img src="images/jackson-3.jpg" alt="Tight tree run with fresh snow" />
-          </div>
-        </div>
-      </article>
-    </section>
 
-    <!-- VAIL -->
-    <section id="vail" class="panel" aria-label="Vail">
-      <article class="card reverse">
-        <div class="content">
-          <h3>Fast. Groomed. Massive mileage.</h3>
-          <p>Vail is a <strong>resort machine</strong>: tons of lifts, acres of terrain, and immaculate groomers that let you fly. It feels bigger, smoother, and more touristy than Jackson—great for high-speed carving and exploring different zones all day.</p>
-          <div class="chips">
-            <span class="chip">Perfect groomers</span>
-            <span class="chip">High-speed laps</span>
-            <span class="chip">Back Bowls</span>
-            <span class="chip">Village vibes</span>
-          </div>
-          <div class="gallery" aria-label="Vail gallery">
-            <img src="images/vail-1.jpg" alt="Wide groomer with corduroy at sunrise" />
-            <img src="images/vail-2.jpg" alt="Vail Back Bowls panorama" />
-            <img src="images/vail-3.jpg" alt="Gondola over sprawling terrain" />
-          </div>
-        </div>
-        <div class="media">
-          <span class="label">Vail, Colorado</span>
-          <img src="images/vail-hero.jpg" alt="Vail Back Bowls from above" />
-        </div>
-      </article>
-    </section>
+        <h2 id="name">Zach DeSieno</h2>
+        <h1 id="title">Snowboarding</h1>
+        <h3 id="subtitle">In the Western United States and Switzerland</h3>
 
-    <!-- BIG SKY (note: Montana) -->
-    <section id="bigsky" class="panel" aria-label="Big Sky">
-      <article class="card">
-        <div class="media">
-          <span class="label">Big Sky, Montana</span>
-          <img src="images/bigsky-hero.jpg" alt="Lone Peak at Big Sky on a bluebird day" />
-        </div>
-        <div class="content">
-          <h3>Wide-open. High alpine. Quietly gnarly.</h3>
-          <p>Big Sky spreads out under <em>Lone Peak</em>: massive bowls, tram-access steeps, and long, wind-buffed faces. It can feel empty even on busy days—great for exploring and finding your line without the crowd density of Vail.</p>
-          <div class="chips">
-            <span class="chip">Alpine bowls</span>
-            <span class="chip">Tram-access steeps</span>
-            <span class="chip">Long fall lines</span>
-            <span class="chip">Low crowd density</span>
-          </div>
-          <div class="gallery" aria-label="Big Sky gallery">
-            <img src="images/bigsky-1.jpg" alt="Expansive alpine bowl at Big Sky" />
-            <img src="images/bigsky-2.jpg" alt="Snowboarder carving on wind-buffed face" />
-            <img src="images/bigsky-3.jpg" alt="Tram heading up to Lone Peak" />
-          </div>
-        </div>
-      </article>
-    </section>
-  </main>
+    </div>
 
-  <footer>
-    <p>Tip: Jackson = remote & ungroomed vibe • Vail = groomed & high-capacity • Big Sky = wide-open under Lone Peak.</p>
-    <p>© <span id="year"></span> Ride the West</p>
-  </footer>
-
-  <script>
-    // Tabs logic
-    const buttons = document.querySelectorAll('.tab-btn');
-    const panels = document.querySelectorAll('.panel');
-    buttons.forEach(btn => btn.addEventListener('click', () => {
-      const tgt = btn.getAttribute('data-target');
-      buttons.forEach(b => b.classList.remove('active'));
-      panels.forEach(p => p.classList.remove('active'));
-      btn.classList.add('active');
-      document.querySelector(tgt).classList.add('active');
-      // focus heading inside the activated panel for a11y
-      const h = document.querySelector(tgt + ' h3');
-      if (h) h.setAttribute('tabindex', '-1'), h.focus({preventScroll:true});
-      window.scrollTo({ top: document.querySelector('.nav').offsetTop + 12, behavior: 'smooth' });
-    }));
+    <div class="gallery">
+        
+    </div>
     
-    // Year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <!-- <img src="assets/" alt=""> -->
+    <!-- 144dpix200px -->
 </body>
+
 </html>
