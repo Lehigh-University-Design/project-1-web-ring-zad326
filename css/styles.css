@@ -14,6 +14,7 @@ h1, h2, h3 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     color: var(--color-dark);
+    margin-bottom: 2em;
 }
 
 h3 {
@@ -39,7 +40,7 @@ div, p, a {
         position: absolute;
         top: 180px;
         left: 80px;
-        font-size: 90pt;
+        font-size: 90px;
     }
     #subtitle {
         position: absolute;
@@ -63,4 +64,48 @@ div, p, a {
         position: relative;
         top: -200px;
     }
+}
+
+/* gallery styles */
+
+.gallery {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.masonry-container {
+  display: flex;
+  flex-flow: column wrap; /* Arrange items in columns and wrap them */
+  height: 600px; /* Crucial: Set a fixed height for the container */
+  align-content: space-between; /* Distribute space between columns */
+  gap: 1rem; /* Add spacing between items and columns */
+}
+
+.masonry-item {
+  width: calc(33.33% - 1rem); /* Adjust width to account for gap */
+  /* Add styling for individual items (e.g., background, padding) */
+  background-color: lightblue;
+  padding: 1rem;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.masonry-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Order items to simulate masonry flow */
+.masonry-item:nth-child(3n+1) { order: 1; }
+.masonry-item:nth-child(3n+2) { order: 2; }
+.masonry-item:nth-child(3n) { order: 3; }
+
+/* Force new columns for proper wrapping */
+.masonry-container::before,
+.masonry-container::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2; /* Place these elements between the first two columns */
 }
