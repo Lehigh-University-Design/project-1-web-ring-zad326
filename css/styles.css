@@ -8,6 +8,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-size: 20px;
 }
 
 h1, h2, h3 {
@@ -68,44 +69,41 @@ div, p, a {
 
 /* gallery styles */
 
-.gallery {
+.gallery, .intro, .destinations {
     max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 4em;
+}
+
+.video-holder {
+    width: 66%;
     margin: 0 auto;
 }
 
-.masonry-container {
-  display: flex;
-  flex-flow: column wrap; /* Arrange items in columns and wrap them */
-  height: 600px; /* Crucial: Set a fixed height for the container */
-  align-content: space-between; /* Distribute space between columns */
-  gap: 1rem; /* Add spacing between items and columns */
-}
-
-.masonry-item {
-  width: calc(33.33% - 1rem); /* Adjust width to account for gap */
-  /* Add styling for individual items (e.g., background, padding) */
-  background-color: lightblue;
-  padding: 1rem;
-  box-sizing: border-box; /* Include padding and border in width calculation */
-}
-
-.masonry-item img {
-    display: block;
+video {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    margin-bottom: 4em;
 }
 
-/* Order items to simulate masonry flow */
-.masonry-item:nth-child(3n+1) { order: 1; }
-.masonry-item:nth-child(3n+2) { order: 2; }
-.masonry-item:nth-child(3n) { order: 3; }
+  .masonry-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust column width as needed */
+      grid-gap: 1em; /* Spacing between images */
+      grid-template-rows: masonry; /* This is the key for masonry behavior */
+    }
 
-/* Force new columns for proper wrapping */
-.masonry-container::before,
-.masonry-container::after {
-  content: "";
-  flex-basis: 100%;
-  width: 0;
-  order: 2; /* Place these elements between the first two columns */
-}
+    .masonry-item img {
+      width: 100%;
+      height: auto;
+      display: block; /* Removes extra space below images */
+      object-fit: cover; /* Ensures images fill their container without distortion */
+    }
+
+    .footer {
+        background-color: #40567d;
+        padding: 1em;
+        text-align: center;
+        p {
+            color: #fff;
+        }
+    }
